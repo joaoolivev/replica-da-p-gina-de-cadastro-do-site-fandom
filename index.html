@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fandom Auth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article>
+    <header>
+      <h1>Sign in to Fandom</h1>
+      <p>The world's largest fan-generated entertainment & gaming platform.</p>
+    </header>
+
+    <main>
+      <p>Sign in with account
+      </p>
+
+      <ul>
+        <div class="google">
+          <li><a href="https://accounts.google.com/o/oauth2/v2/auth?" class="google">Entrar com Google</a></li>
+        </div>
+        <div class="facebook">
+          <li><a href="https://www.facebook.com/v22.0/dialog/oauth" class="facebook">Entrar com Facebook</a></li>
+        </div>
+        <div class="twitch">
+          <li><a href="https://id.twitch.tv/oauth2/authorize" class="twitch">Entrar com Twitch</a></li>
+        </div>
+        <div class="apple">
+          <li><a href="https://appleid.apple.com/oauth2/authorize" class="apple">Entrar com Apple</a></li>
+        </div>
+      </ul>
+      <form action="https://www.fandom.com/" method="POST">
+      <div class="username">
+        <label for="username">username</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="email">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+        <div class="password">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <div class="years-old">
+            <label for="years-old">how old are you?</label>
+            <input type="number" id="years-old" name="years-old" required />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+
+    </main>
+  </article>
+</body>
+</html>
